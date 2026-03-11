@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Assignment</title>
+
+<style>
+#para{
+    font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>DOM Manipulation Example</h2>
+
+<p id="para">Click the button to change this text</p>
+
+<button onclick="changeContent()">Click Me</button>
+
+<script>
+
+// -------------------- PROMISE EXAMPLE --------------------
+
+let dataPromise = new Promise(function(resolve, reject){
+
+    setTimeout(function(){
+
+        resolve("Data fetched successfully");
+
+    },2000);
+
+});
+
+dataPromise
+.then(function(message){
+    console.log(message);
+})
+.catch(function(error){
+    console.log(error);
+});
+
+ 
+
+// -------------------- DOM MANIPULATION --------------------
+
+function changeContent(){
+
+    let paragraph = document.getElementById("para");
+
+    paragraph.textContent = "Welcome to JavaScript DOM Manipulation";
+
+    paragraph.style.color = "blue";
+
+    paragraph.style.fontSize = "24px";
+
+}
+
+</script>
+
+</body>
+</html>
