@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JobSphere - Modern Job Portal</title>
+    <link rel="stylesheet" href="expt4.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">JobSphere</div>
+        <ul>
+            <li>Home</li>
+            <li>Post Job</li>
+            <li>Jobs</li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Find Your Dream Job</h1>
+        <p>Post and explore opportunities in one place.</p>
+    </section>
+
+    <div class="main-container">
+
+        <div class="form-section">
+            <h2>Post a Job</h2>
+            <form id="jobForm">
+                <input type="text" id="title" placeholder="Job Title" required>
+                <input type="text" id="company" placeholder="Company Name" required>
+                <input type="text" id="location" placeholder="Location" required>
+
+                <select id="type" required>
+                    <option value="">Select Job Type</option>
+                    <option>Full-Time</option>
+                    <option>Part-Time</option>
+                    <option>Internship</option>
+                    <option>Remote</option>
+                </select>
+
+                <input type="text" id="salary" placeholder="Salary (e.g. 5-8 LPA)" required>
+                <textarea id="description" placeholder="Job Description" rows="3" required></textarea>
+
+                <button type="submit">Post Job</button>
+            </form>
+        </div>
+
+        <div class="jobs-section">
+
+            <div class="jobs-header">
+                <h2>Available Jobs</h2>
+                <span id="jobCount"></span>
+            </div>
+
+            <div class="search-filter">
+                <input type="text" id="searchInput" placeholder="Search by title or company...">
+                <select id="filterType">
+                    <option value="All">All Types</option>
+                    <option>Full-Time</option>
+                    <option>Part-Time</option>
+                    <option>Internship</option>
+                    <option>Remote</option>
+                </select>
+            </div>
+
+            <div id="jobList" class="job-list"></div>
+
+            <div id="emptyState" class="empty-state">
+                No jobs posted yet 🚀
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="expt4.js"></script>
+</body>
+</html>

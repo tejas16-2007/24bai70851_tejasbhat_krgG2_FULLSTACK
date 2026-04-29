@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+    background-image: url("AmigoHub.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar h2 {
+    margin: 0;
+    flex: 1;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.signup-btn {
+    padding: 6px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+.main {
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+}
+.feed {
+    width: 65%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.post h4 {
+    margin: 0;
+}
+.side {
+    width: 35%;
+    margin-left: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.footer {
+    margin-top: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

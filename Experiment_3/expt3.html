@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KAIF ENTERPRISES</title>
+    <link rel="stylesheet" href="expt3.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="logo">🦅</div>
+    <div class="company-name">KAIF ENTERPRISES</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#apply">Apply Job</a>
+        <a href="#candidates">Candidates</a>
+        <a href="#">Sign Out</a>
+    </nav>
+</header>
+
+<!-- Main Section -->
+<main>
+
+    <!-- Application Form -->
+    <section class="card" id="apply">
+        <h2>Job Search Form</h2>
+        <form id="careerForm">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="emailId" placeholder="Email Address" required>
+            <input type="text" id="jobTitle" placeholder="Job Role" required>
+            <select id="yearsExp" required>
+    <option value="" disabled selected>Select Experience</option>
+    <option value="< Less than a Year"> Less than 1 Year</option>
+    <option value="1 - 5 Years">1 - 5 Years</option>
+    <option value="More than 5 Years">More than 5 Years</option>
+</select>
+            <textarea id="skillSet" placeholder="Skills" rows="3" required></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Candidate Display -->
+    <section class="card" id="candidates">
+        <h2>Applicants Record</h2>
+        <div id="displayData"></div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 KAIF ENTERPRISES | Empowering Potentials Globally</p>
+</footer>
+
+<script src="expt3.js"></script>
+</body>
+</html>
