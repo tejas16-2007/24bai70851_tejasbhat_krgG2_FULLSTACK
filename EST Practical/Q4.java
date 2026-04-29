@@ -26,8 +26,8 @@ public static void main(String[] args) {
 
 Student s = new Student(
 1,
-"Kaif",
-"kaif@gmail.com",
+"Tejas",
+"Tejas@gmail.com",
 "CSE"
 );
 
